@@ -17,4 +17,4 @@ class Student:
             self.grades.append(0.0)
 
     def get_gpa(self):
-       return round(sum(self.grades)/len(self.grades), 2)
+       return round(sum(self.grades)/len(self.grades), 2) if len(self.grades)>0 else 0
